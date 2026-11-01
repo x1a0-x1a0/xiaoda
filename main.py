@@ -129,22 +129,22 @@ async def change_status():
     latency = round(bot.latency * 1000)
     guild_count = len(bot.guilds)
 
-    # 狀態訊息清單 (會在兩者之間輪流切換)
+    # 狀態訊息清單 (會在這些狀態之間輪流切換)
     statuses = [
         f"達我的反應速度為{latency}ms，還有能給達我零食嗎:>",
         f"達我在{guild_count}個伺服器逛逛",
         "達！達！",
-        "呀嘿嘿... 小地.地瓜葉....啊！！.喔..原來是夢，好可惜...."
+        "呀嘿嘿... 小地.地瓜葉....啊！！.喔..原來是夢，好可惜....",
         "看..看.看甚麼！達我這麼可愛，怎麼能看呢？"
     ]
 
-    # 使用目前時間秒數來交替切換 index (0 或 1)
+    # 使用目前時間秒數來交替切換 index
     status_index = int(time.time() // 10) % len(statuses)
     current_status = statuses[status_index]
 
-    # 更新機器人的 Discord 狀態顯示 (正在玩/Playing)
-    await bot.change_presence(activity=discord.Game(name=current_status))
-
+    # 更新機器人的 Discord 狀態顯示 (改為自訂狀態 / Custom Status 氣泡文字)
+    await bot.change_presence(activity=discord.CustomActivity(name=current_status))
+    
 @bot.event
 async def on_ready():
     await bot.tree.sync()
