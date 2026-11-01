@@ -1558,9 +1558,6 @@ bot.tree.add_command(test_group)
 #      |          \  ╱                  ⎺⎺⎺⎺⎺⎺⎺⎠⎺⎺⎺⎺⎺⎺ ▹
 #    ⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺ ⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺   ⎛              ⎠▹
 
-
-
-
 # 啟動機器人 (從環境變數讀取 DISCORD_TOKEN)
 TOKEN = os.getenv('DISCORD_TOKEN')
 
