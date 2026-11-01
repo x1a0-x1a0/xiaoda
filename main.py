@@ -16,10 +16,10 @@ intents.members = True
 # 初始化小達 (小龜)
 bot = commands.Bot(command_prefix='/', intents=intents)
 
-# 👑 開發者/作者 ID 清單
-DEVELOPER_IDS = [1187970337338572881]
+# 開發者/作者 ID 清單
+DEVELOPER_IDS = [1187970337338572881] #⬅改成你的id id，這是我的
 
-# 🎨 色號定義
+# 色號定義 (dadadadadadadadaa)
 COLOR_TURTLE = 0x1BB80A   # 小達的主題色
 COLOR_COOLDOWN = 0x75CAFF # 冷卻色號
 COLOR_ERROR = 0xE00000    # 錯誤警告色號
@@ -1548,6 +1548,17 @@ async def ping(interaction: discord.Interaction):
     await interaction.response.send_message(embed=embed)
 
 bot.tree.add_command(test_group)
+# ╭────────────────────────╮
+# │看甚麼看！達我正在休息>:( │
+# ╰────────────────╲───────╯
+#   ___________     ╲⎠
+#  /            \                               
+# |         ⊖   |       ╱⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺╲    ⎫
+# |___________   |     ╱                    ╲    
+#      |          \  ╱                  ⎺⎺⎺⎺⎺⎺⎺⎠⎺⎺⎺⎺⎺⎺ ▹
+#    ⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺ ⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺   ⎛              ⎠▹
+
+
 
 
 # 啟動機器人 (從環境變數讀取 DISCORD_TOKEN)
