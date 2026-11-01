@@ -1,5 +1,0 @@
-.env
-__pycache__/
-*.mid
-temp_*
-*.log
